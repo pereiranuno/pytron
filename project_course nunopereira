@@ -106,6 +106,20 @@ registry_list = [
     },
 ]
 
+registry_list = [
+    {"show": "The Witcher", "event": "start", "timestamp": 0, "user_id": 1},
+    {"show": "The Witcher", "event": "start", "timestamp": 1, "user_id": 2},
+    {"show": "The Witcher", "event": "stop", "timestamp": 2, "user_id": 2},
+    {"show": "The Umbrella Academy", "event": "start", "timestamp": 3, "user_id": 1},
+    {"show": "The Umbrella Academy", "event": "stop", "timestamp": 4, "user_id": 1},
+    {"show": "Brooklyn Nine-Nine", "event": "start", "timestamp": 5, "user_id": 3},
+    {"show": "Brooklyn Nine-Nine", "event": "stop", "timestamp": 6, "user_id": 3},
+    {"show": "One Piece", "event": "start", "timestamp": 7, "user_id": 4},
+    {"show": "One Piece", "event": "stop", "timestamp": 8, "user_id": 4},
+    {"show": "One Piece", "event": "start", "timestamp": 9, "user_id": 5},
+    {"show": "One Piece", "event": "start", "timestamp": 10, "user_id": 2},
+]
+
 
 
 def main():
