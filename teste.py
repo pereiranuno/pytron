@@ -104,15 +104,6 @@ print(c)
 
 
 
-
-
-def create_account(age,username):
-    if testusername and testage
-        print('account created')
-    else
-        print('account not created')
-
-
 def testusername(username) -> bool:
     if len(username) < 5:
        return(False)
@@ -124,11 +115,20 @@ def testage(age) -> bool:
     if age < 18:
        return(False)
     
-age = int(input("enter your age: "))
-username = input("enter your username: ")
-create_account(age,username)
+#age = int(input("enter your age: "))
+#username = input("enter your username: ")
+
 
 
 
 for x in range(5):
 	print(x)
+    
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    # Handling the ZeroDivisionError and printing an error message
+    print("Error: Cannot divide by zero")
+# This line will be executed regardless of whether an exception occurred
+print("outside of try and except block")
