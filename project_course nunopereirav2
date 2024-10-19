@@ -1,3 +1,5 @@
+#---Fucntions---
+
 def calculate_active_users_per_show(registry_list:list[dict]) -> dict:
     '''
     Calculate the active users per show in a given registry list.
@@ -62,6 +64,7 @@ def print_formated_output(event_collection:list[dict],keyname:str,valuename:str)
     print("-" * 30 + "\n")
 
 def conver_tabular_file_content_to_dictionary(filename) -> dict:
+    
         with open(filename, "r") as registry_tabular:
                 registry_list = []
                 registry_fields = ["show", "event", "timestamp", "user_id"]
@@ -94,7 +97,7 @@ registry_list = [
 registry_list = conver_tabular_file_content_to_dictionary("events.tsv")
 print_formated_output(calculate_active_users_per_show(registry_list),'Show','Active Users')
 
-#---TESTS---
+#---Tests---
 
 #Test1 -  Final Output is Correct
 def test_calc_active_users_per_show_is_outputted():
