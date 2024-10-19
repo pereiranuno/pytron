@@ -94,8 +94,9 @@ registry_list = [
 ]
 '''
 
-registry_list = conver_tabular_file_content_to_dictionary("events.tsv")
-print_formated_output(calculate_active_users_per_show(registry_list),'Show','Active Users')
+if __name__ == "__main__":
+    registry_list = conver_tabular_file_content_to_dictionary("events.tsv")
+    print_formated_output(calculate_active_users_per_show(registry_list),'Show','Active Users')
 
 #---Tests---
 
